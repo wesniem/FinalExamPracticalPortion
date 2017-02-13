@@ -28,7 +28,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileViewHolder> {
 
     @Override
     public ProfileViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.profile_item_layout,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.profile_item_layout, parent, false);
         iconImage = (ImageView) view.findViewById(R.id.icon_image);
         text = (TextView) view.findViewById(R.id.icon_text);
         context = parent.getContext();
@@ -37,6 +37,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileViewHolder> {
 
     @Override
     public void onBindViewHolder(ProfileViewHolder holder, int position) {
+
         holder.bind(position);
     }
 
@@ -71,4 +72,6 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileViewHolder> {
     public int getItemCount() {
         return 5;
     }
+
 }
+
